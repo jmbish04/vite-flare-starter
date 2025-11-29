@@ -2,6 +2,8 @@
 
 ⚡ Minimal authenticated starter kit for building apps on Cloudflare Workers.
 
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/jezweb/vite-flare-starter)
+
 ## What's Included
 
 - **Authentication** - better-auth with email/password + Google OAuth
@@ -31,7 +33,7 @@
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/your-username/vite-flare-starter.git my-app
+git clone https://github.com/jezweb/vite-flare-starter.git my-app
 cd my-app
 pnpm install
 ```
