@@ -1,23 +1,43 @@
-import { Outlet } from 'react-router-dom'
-import { Header } from '@/client/components/marketing/Header'
-import { Footer } from '@/client/components/marketing/Footer'
-import { VoiceWidget } from '@/client/components/shared/VoiceWidget'
+import { Outlet, Link } from 'react-router-dom'
+import { Button } from '@/components/ui/button'
+import { ThemeToggle } from '@/client/components/theme-toggle'
 
 /**
- * Public layout for marketing/informational pages
- * Provides consistent header and footer for all public pages
+ * Public layout for landing and auth pages
+ * Provides simple header and footer for public pages
  */
 export function PublicLayout() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+      {/* Simple Header */}
+      <header className="border-b border-border">
+        <div className="container mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+          <Link to="/" className="text-xl font-bold">
+            Vite Flare Starter
+          </Link>
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <Button variant="ghost" asChild>
+              <Link to="/sign-in">Sign In</Link>
+            </Button>
+            <Button asChild>
+              <Link to="/sign-up">Get Started</Link>
+            </Button>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
       <main className="flex-1">
         <Outlet />
       </main>
-      <Footer />
 
-      {/* ElevenLabs Voice Widget for public visitors */}
-      <VoiceWidget />
+      {/* Simple Footer */}
+      <footer className="border-t border-border py-8">
+        <div className="container mx-auto max-w-6xl px-4 text-center text-muted-foreground text-sm">
+          <p>© {new Date().getFullYear()} Vite Flare Starter. MIT Licensed.</p>
+        </div>
+      </footer>
     </div>
   )
 }

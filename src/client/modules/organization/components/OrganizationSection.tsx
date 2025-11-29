@@ -299,7 +299,7 @@ export function OrganizationSection() {
             <div className="space-y-1">
               <p className="text-sm font-medium">Timezone</p>
               <p className="text-xs text-muted-foreground">
-                Contacts without a timezone will use this as their default
+                Used for scheduling and time-based operations
               </p>
             </div>
             <Select

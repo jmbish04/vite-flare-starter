@@ -190,7 +190,7 @@ export function SecuritySection() {
                   remove all your data including:
                   <ul className="list-disc list-inside mt-2 space-y-1">
                     <li>Your profile information</li>
-                    <li>All your todos and tasks</li>
+                    <li>All your data and settings</li>
                     <li>Your authentication sessions</li>
                   </ul>
                 </DialogDescription>

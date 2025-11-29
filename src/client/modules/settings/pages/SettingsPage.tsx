@@ -5,7 +5,6 @@ import { ProfileSection } from '../components/ProfileSection'
 import { SecuritySection } from '../components/SecuritySection'
 import { PreferencesSection } from '../components/PreferencesSection'
 import { ApiTokensSection } from '../components/ApiTokensSection'
-import { McpServersSection } from '../components/McpServersSection'
 import { OrganizationSection } from '@/client/modules/organization/components/OrganizationSection'
 
 export function SettingsPage() {
@@ -31,12 +30,11 @@ export function SettingsPage() {
 
       {/* Tabs */}
       <Tabs value={tab} onValueChange={handleTabChange} className="w-full">
-        <TabsList className="grid w-full grid-cols-3 sm:grid-cols-6 mb-8">
+        <TabsList className="grid w-full grid-cols-3 sm:grid-cols-5 mb-8">
           <TabsTrigger value="profile">Profile</TabsTrigger>
           <TabsTrigger value="organization">Organization</TabsTrigger>
           <TabsTrigger value="security">Security</TabsTrigger>
           <TabsTrigger value="api-tokens">API Tokens</TabsTrigger>
-          <TabsTrigger value="mcp-servers">MCP Servers</TabsTrigger>
           <TabsTrigger value="settings">Settings</TabsTrigger>
         </TabsList>
 
@@ -54,10 +52,6 @@ export function SettingsPage() {
 
         <TabsContent value="api-tokens">
           <ApiTokensSection />
-        </TabsContent>
-
-        <TabsContent value="mcp-servers">
-          <McpServersSection />
         </TabsContent>
 
         <TabsContent value="settings">

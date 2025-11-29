@@ -331,7 +331,7 @@ export function ApiTokensSection() {
             <ol className="list-decimal list-inside space-y-2 text-sm text-muted-foreground">
               <li>Create a new API token above</li>
               <li>In ElevenLabs, add a new Webhook tool</li>
-              <li>Set the URL to your API endpoint (e.g., <code className="text-foreground">https://your-app.workers.dev/api/contacts</code>)</li>
+              <li>Set the URL to your API endpoint (e.g., <code className="text-foreground">https://your-app.workers.dev/api/your-endpoint</code>)</li>
               <li>Add a Header with Type "Value", Name "Authorization", and Value "Bearer your_token"</li>
               <li>Configure the HTTP method and other settings as needed</li>
             </ol>
