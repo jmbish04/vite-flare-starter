@@ -46,9 +46,6 @@ Each feature module contains:
 ## Module List
 
 1. **auth** - Authentication (better-auth)
-2. **dashboard** - Main layout and navigation
-3. **todos** - Example CRUD module
-4. **categories** - Supporting module for todos
-5. **settings** - User preferences
-6. **agents** - AI Agents SDK example (Durable Objects)
-7. **workflows** - Background tasks example (Cloudflare Workflows)
+2. **settings** - User profile, security, preferences
+3. **api-tokens** - API token management
+4. **organization** - Business/org settings

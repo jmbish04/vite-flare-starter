@@ -6,8 +6,7 @@ Static files that are served directly without processing.
 
 ```
 public/
-├── favicon.ico           # Site favicon
-├── robots.txt           # Search engine instructions
+├── favicon.svg          # Site favicon (lightning bolt)
 ├── images/              # Static images
 ├── fonts/               # Custom fonts (if not using CDN)
 └── [other static files]
